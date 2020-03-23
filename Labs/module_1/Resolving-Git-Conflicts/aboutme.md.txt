@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 NEw version about me
+=======
+Hey guys, 
+
+I'm Camille and I'm trying to complete this lab!
+>>>>>>> bd6a54a93fafde30b222dbe042f3289e7605d481
