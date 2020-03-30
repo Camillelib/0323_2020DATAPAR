@@ -28,7 +28,7 @@ on s.title_id = tt.title_id
 order by s.qty desc
 limit 3;
 
-SELECT a.au_id,a.au_lname,a.au_fname, s.qty as TOTAL
+SELECT a.au_id,a.au_lname,a.au_fname, IFNULL(s.qty,0) as TOTAL
 FROM authors a
 left join titleauthor t
 on a.au_id = t.au_id 
