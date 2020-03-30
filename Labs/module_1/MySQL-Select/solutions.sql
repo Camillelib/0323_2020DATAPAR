@@ -31,11 +31,11 @@ limit 3;
 
 SELECT a.au_id, au_lname, au_fname, IFNULL(sum(s.qty),0) as TOTAL
 FROM authors a
-inner join titleauthor t
+left join titleauthor t
 on a.au_id = t.au_id 
-inner join titles tt
+left join titles tt
 on t.title_id = tt.title_id
-inner join sales s
+left join sales s
 on s.title_id = tt.title_id
 group by a.au_id
 order by sum(s.qty) desc
