@@ -42,16 +42,58 @@ order by date, duration;
 #6. From the trans table, for account_id 396, sum the amount of transactions for each type
 # (VYDAJ = Outgoing, PRIJEM = Incoming). Your output should have the account_id, 
 #the type and the sum of amount, named as total_amount. Sort alphabetically by type.
-select *
-from trans;
+select account_id, type, sum(amount) as total_amount
+from trans
+where account_id=396
+group by type;
 
 #7. From the previous output, translate the values for type to English, 
 #rename the column to transaction_type, round total_amount down to an integer
-select * 
+create table t2ok
+select account_id,
+(CASE WHEN type='PRIJEM' 
+THEN 'INCOMING'
+ELSE 'OUTGOING' 
+END) as transaction_type, round(total_amount,1) as total_amount2
+from 
+(select account_id, type, sum(amount) as total_amount
 from trans
-if type='PRIJEM'	type='INCOMING';
+where account_id=396
+group by type) t1;
 
 #8. From the previous result, modify you query so that it returns only one row, 
 #with a column for incoming amount, outgoing amount and the difference
+select account_id, sum(if(transaction_type='INCOMING',total_amount2,0)) as INCOMING,
+	sum(if(transaction_type like 'OUT%',total_amount2,0)) as OUTGOING, sum(if(transaction_type='INCOMING',total_amount2,0))-sum(if(transaction_type like 'OUT%',total_amount2,0)) as DIFFERENCE
+from t2ok
+group by account_id;
 
 #9. Continuing with the previous example, rank the top 10 account_ids based on their difference
+
+# create table with all ids per type
+select account_id, type, round(sum(amount)) as total_amount
+from trans
+group by account_id, type;
+
+#transform type into INCOMING and OUTGOING
+create temporary table t6
+select account_id,
+(CASE WHEN type='PRIJEM' 
+THEN 'INCOMING'
+ELSE 'OUTGOING' 
+END) as transaction_type, round(total_amount,1) as total_amount2
+from 
+(select account_id, type, sum(amount) as total_amount
+from trans
+group by account_id, type) t5b;
+
+select *
+from t6;
+
+#final result with top 10 differences:
+select account_id, sum(if(transaction_type='INCOMING',total_amount2,0)) as INCOMING,
+	sum(if(transaction_type like 'OUT%',total_amount2,0)) as OUTGOING, sum(if(transaction_type='INCOMING',total_amount2,0))-sum(if(transaction_type like 'OUT%',total_amount2,0)) as DIFFERENCE
+from t6
+group by account_id
+order by DIFFERENCE desc
+limit 10;
