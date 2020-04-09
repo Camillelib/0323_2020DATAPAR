@@ -45,7 +45,9 @@ order by date, duration;
 select account_id, type, sum(amount) as total_amount
 from trans
 where account_id=396
-group by type;
+group by type
+having type='PRIJEM' or type='VYDAJ'
+;
 
 #7. From the previous output, translate the values for type to English, 
 #rename the column to transaction_type, round total_amount down to an integer
@@ -61,12 +63,37 @@ from trans
 where account_id=396
 group by type) t1;
 
+select *
+from t2ok;
+
 #8. From the previous result, modify you query so that it returns only one row, 
 #with a column for incoming amount, outgoing amount and the difference
 select account_id, sum(if(transaction_type='INCOMING',total_amount2,0)) as INCOMING,
-	sum(if(transaction_type like 'OUT%',total_amount2,0)) as OUTGOING, sum(if(transaction_type='INCOMING',total_amount2,0))-sum(if(transaction_type like 'OUT%',total_amount2,0)) as DIFFERENCE
+	sum(if(transaction_type like 'OUT%',total_amount2,0)) as OUTGOING, 
+    sum(if(transaction_type='INCOMING',total_amount2,0))-sum(if(transaction_type like 'OUT%',total_amount2,0)) as DIFFERENCE
 from t2ok
 group by account_id;
+
+#other solutions
+WITH x AS (
+select account_id, sum(amount) as sumx,
+CASE WHEN type = 'PRIJEM' THEN 'INCOMING' ELSE 'OUTGOING'
+END as x
+from trans
+where account_id = 396
+group by type
+having type = 'PRIJEM' or type = 'VYDAJ'),
+y AS (select account_id, sum(amount) as sumy,
+CASE WHEN type = 'PRIJEM' THEN 'OUTGOING' ELSE 'INCOMING'
+END as y
+from trans
+where account_id = 396
+group by type
+having type = 'PRIJEM' or type = 'VYDAJ')
+select x.account_id, max(sumx) - min(sumy), max(sumx), min(sumy)
+FROM x
+JOIN y
+ON x.x = y.y
 
 #9. Continuing with the previous example, rank the top 10 account_ids based on their difference
 
