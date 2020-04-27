@@ -1,0 +1,1223 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='liquor_store_sales (liquor_store_sales)' inline='true' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='liquor_store_sales' name='google-sheets.0hjauvv0jvorls153pdk11wpbnep'>
+            <connection REDIRECT_URI='urn:ietf:wg:oauth:2.0:oob' SCOPE='email profile https://www.googleapis.com/auth/drive.readonly' class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='liquor_store_sales' googleSheetId='1317YFVX9hmEizCoa1ejNYai1qjyI84LFYj4DLY2YkuU' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='camille.libert.coubard@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='google-sheets.0hjauvv0jvorls153pdk11wpbnep' name='liquor_store_sales' table='[liquor_store_sales$]' type='table'>
+          <columns gridOrigin='A1:I10001:no:A1:I2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='string' name='Supplier' ordinal='2' />
+            <column datatype='integer' name='ItemCode' ordinal='3' />
+            <column datatype='string' name='Description' ordinal='4' />
+            <column datatype='string' name='ItemType' ordinal='5' />
+            <column datatype='real' name='RetailSales' ordinal='6' />
+            <column datatype='real' name='RetailTransfers' ordinal='7' />
+            <column datatype='real' name='WarehouseSales' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Supplier]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>Supplier</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ItemCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ItemCode]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>ItemCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ItemType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ItemType]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>ItemType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RetailSales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RetailSales]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>RetailSales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RetailTransfers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RetailTransfers]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>RetailTransfers</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WarehouseSales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WarehouseSales]</local-name>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias>WarehouseSales</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[liquor_store_sales]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I10001:no:A1:I2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Item Code' datatype='integer' name='[ItemCode]' role='dimension' type='ordinal' />
+      <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+        <aliases>
+          <alias key='0' value='Q1' />
+          <alias key='1' value='Q2' />
+          <alias key='2' value='Q3' />
+          <alias key='3' value='Q4' />
+        </aliases>
+      </column>
+      <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([Month])' />
+      </column>
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+      <column caption='Retail Transfers' datatype='real' name='[RetailTransfers]' role='measure' type='quantitative' />
+      <column caption='Warehouse Sales' datatype='real' name='[WarehouseSales]' role='measure' type='quantitative' />
+      <column-instance column='[RetailTransfers]' derivation='Avg' name='[avg:RetailTransfers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[RetailTransfers]' derivation='Sum' name='[sum:RetailTransfers:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.548092' measure-ordering='alphabetic' measure-percentage='0.451908' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0gsa4m012izyg91fnf7fp12zw4gl]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:RetailTransfers:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:RetailTransfers:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1. Total Retail Sales by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RetailSales]' derivation='Sum' name='[sum:RetailSales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:RetailSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{23D9CB13-C25B-4F55-A0B6-48D0CFEAE746}' />
+    </worksheet>
+    <worksheet name='10. Average Warehouse Sales by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Warehouse Sales' datatype='real' name='[WarehouseSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[WarehouseSales]' derivation='Avg' name='[avg:WarehouseSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:WarehouseSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5965E8DD-6D6B-47A7-941E-5ECA151B30D8}' />
+    </worksheet>
+    <worksheet name='11. Total Warehouse Sales by Year/Month (rows) and Item Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Warehouse Sales' datatype='real' name='[WarehouseSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WarehouseSales]' derivation='Sum' name='[sum:WarehouseSales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]' value='98' />
+            <format attr='height' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk]' value='38' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:WarehouseSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{12C623FB-FF9F-49C0-89F3-83E1E42838E5}' />
+    </worksheet>
+    <worksheet name='12. Average Warehouse Sales by Year/Month (rows) and Item Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Warehouse Sales' datatype='real' name='[WarehouseSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[WarehouseSales]' derivation='Avg' name='[avg:WarehouseSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]' value='160' />
+            <format attr='height' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk]' value='49' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:WarehouseSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{33EE55F6-F56A-47D3-ACCA-D09D0B2FF2EE}' />
+    </worksheet>
+    <worksheet name='2. Average Retail Sales by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[RetailSales]' derivation='Avg' name='[avg:RetailSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:RetailSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{53F7DD4E-2ADD-4366-8D52-67D66D6ECF4F}' />
+    </worksheet>
+    <worksheet name='3.Total Retail Sales by Year/Month and Item Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RetailSales]' derivation='Sum' name='[sum:RetailSales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk]' value='36' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:RetailSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{E2E859A4-B7AC-4DFA-9C83-88B5D686DFB0}' />
+    </worksheet>
+    <worksheet name='4. Average Retail Sales by Year/Month (rows) and Item Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[RetailSales]' derivation='Avg' name='[avg:RetailSales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk]' value='33' />
+            <format attr='width' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]' value='69' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:RetailSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{1450BA77-22E6-4624-A541-E06B5C5009AB}' />
+    </worksheet>
+    <worksheet name='5. Total Retail Transfers by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Sales' datatype='real' name='[RetailSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RetailSales]' derivation='Sum' name='[sum:RetailSales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:RetailSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CA44FCD6-AD94-4367-8B2C-68391F49BE1E}' />
+    </worksheet>
+    <worksheet name='6. Average Retail Transfers by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Transfers' datatype='real' name='[RetailTransfers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[RetailTransfers]' derivation='Avg' name='[avg:RetailTransfers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:RetailTransfers:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7F514892-295A-4C4E-9444-52E1F192FF21}' />
+    </worksheet>
+    <worksheet name='7. Total Retail Transfers by Year/Month (rows) and Item Type '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Transfers' datatype='real' name='[RetailTransfers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RetailTransfers]' derivation='Sum' name='[sum:RetailTransfers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:RetailTransfers:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{3BA20CF8-F06D-48A7-BEBE-A3059D8AB508}' />
+    </worksheet>
+    <worksheet name='8. Average Retail Transfers by Year/Month (rows) and Item Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column caption='Item Type' datatype='string' name='[ItemType]' role='dimension' type='nominal' />
+            <column caption='Month (str)' datatype='string' datatype-customized='true' name='[Month (copie)_661184765079150593]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Month])' />
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Retail Transfers' datatype='real' name='[RetailTransfers]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[RetailTransfers]' derivation='Avg' name='[avg:RetailTransfers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ItemType]' derivation='None' name='[none:ItemType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month (copie)_661184765079150593]' derivation='None' name='[none:Month (copie)_661184765079150593:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]' value='164' />
+            <format attr='height' field='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk]' value='39' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[avg:RetailTransfers:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (copie)_661184765079150593:nk])</rows>
+        <cols>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:ItemType:nk]</cols>
+      </table>
+      <simple-id uuid='{7F36086A-C6CA-4288-8A9A-D8E04D3FF37A}' />
+    </worksheet>
+    <worksheet name='9. Total Warehouse Sales by Year/Quarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column caption='Warehouse Sales' datatype='real' name='[WarehouseSales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year]' role='dimension' type='nominal' />
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[WarehouseSales]' derivation='Sum' name='[sum:WarehouseSales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:WarehouseSales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Year:nk] / [federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0C11D5C8-5382-478F-A5EB-8696E859BBF1}' />
+    </worksheet>
+    <worksheet name='Quarter/Record measure'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='liquor_store_sales (liquor_store_sales)' name='federated.0gsa4m012izyg91fnf7fp12zw4gl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gsa4m012izyg91fnf7fp12zw4gl'>
+            <column aggregation='None' caption='Quarter' datatype='integer' name='[Month (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Month]' peg='0' size='4' />
+              <aliases>
+                <alias key='0' value='Q1' />
+                <alias key='1' value='Q2' />
+                <alias key='2' value='Q3' />
+                <alias key='3' value='Q4' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Month (classe)]' derivation='None' name='[none:Month (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gsa4m012izyg91fnf7fp12zw4gl].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gsa4m012izyg91fnf7fp12zw4gl].[none:Month (classe):ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{92FADFC2-2984-4E47-AE53-36CB108E5166}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Lab_Tableau' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5187' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='6017' />
+            <zone h='82676' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='16494'>
+              <flipboard active-id='13' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Quarter/Record' captured-sheet='Quarter/Record measure' id='1' />
+                  <story-point caption='1. Total Retail Sales by Year/Quarter' captured-sheet='1. Total Retail Sales by Year/Quarter' id='2' />
+                  <story-point caption='2. Average Retail Sales by Year/Quarter' captured-sheet='2. Average Retail Sales by Year/Quarter' id='3' />
+                  <story-point caption='3.Total Retail Sales by Year/Month and Item Type' captured-sheet='3.Total Retail Sales by Year/Month and Item Type' id='4' />
+                  <story-point caption='4. Average Retail Sales by Year/Month and Item Type' captured-sheet='4. Average Retail Sales by Year/Month (rows) and Item Type' id='5' />
+                  <story-point caption='5. Total Retail Transfers by Year/Quarter' captured-sheet='5. Total Retail Transfers by Year/Quarter' id='6' />
+                  <story-point caption='6. Average Retail Transfers by Year/Quarter' captured-sheet='6. Average Retail Transfers by Year/Quarter' id='7' />
+                  <story-point caption='7. Total Retail Transfers by Year/Month and Item Type ' captured-sheet='7. Total Retail Transfers by Year/Month (rows) and Item Type ' id='8' />
+                  <story-point caption='8. Average Retail Transfers by Year/Month and Item Type' captured-sheet='8. Average Retail Transfers by Year/Month (rows) and Item Type' id='9' />
+                  <story-point caption='9. Total Warehouse Sales by Year/Quarter' captured-sheet='9. Total Warehouse Sales by Year/Quarter' id='10' />
+                  <story-point caption='10. Average Warehouse Sales by Year/Quarter' captured-sheet='10. Average Warehouse Sales by Year/Quarter' id='11' />
+                  <story-point caption='11. Total Warehouse Sales by Year/Month and Item Type' captured-sheet='11. Total Warehouse Sales by Year/Month (rows) and Item Type' id='12' />
+                  <story-point caption='12. Average Warehouse Sales by Year/Month (rows) and Item Type' captured-sheet='12. Average Warehouse Sales by Year/Month (rows) and Item Type' id='13' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{451C4456-28E4-4104-BFE8-C45A6F2994E9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Quarter/Record measure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CDC2E215-2F69-4EA6-958A-2A77D6463E26}' />
+    </window>
+    <window class='worksheet' name='1. Total Retail Sales by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3B193550-EC4B-492C-AB60-4B0A397BEE9B}' />
+    </window>
+    <window class='worksheet' name='2. Average Retail Sales by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27917F74-4D61-46E4-804F-3F1C14C239EA}' />
+    </window>
+    <window class='worksheet' name='3.Total Retail Sales by Year/Month and Item Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1AFC09B0-29D7-42B5-8C04-5C4FE44DD24D}' />
+    </window>
+    <window class='worksheet' name='4. Average Retail Sales by Year/Month (rows) and Item Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26D5D55F-1905-4F51-8301-AC7CCBD6DEF6}' />
+    </window>
+    <window class='worksheet' name='5. Total Retail Transfers by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A70FDDB4-4401-4F34-875A-F7BB29D76E44}' />
+    </window>
+    <window class='worksheet' name='6. Average Retail Transfers by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ECC10674-2CC4-4926-BD54-A0622F19FEF8}' />
+    </window>
+    <window class='worksheet' name='7. Total Retail Transfers by Year/Month (rows) and Item Type '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A4F207B-302D-4D07-B574-D943DF6E388C}' />
+    </window>
+    <window class='worksheet' name='8. Average Retail Transfers by Year/Month (rows) and Item Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F14A79E4-8721-42D0-8566-5ABC31C88DB8}' />
+    </window>
+    <window class='worksheet' name='9. Total Warehouse Sales by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1944B48-4AC6-4D45-BA9C-599AFE14D323}' />
+    </window>
+    <window class='worksheet' name='10. Average Warehouse Sales by Year/Quarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9621A885-D661-4BC2-B1A6-69BE7F050007}' />
+    </window>
+    <window class='worksheet' name='11. Total Warehouse Sales by Year/Month (rows) and Item Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC0D5318-881D-4A79-A5D9-26FB4A9D3A5E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='12. Average Warehouse Sales by Year/Month (rows) and Item Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{36FBCCDB-DCB9-45E9-B996-6329351F64D6}' />
+    </window>
+    <window class='dashboard' name='Lab_Tableau'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{54A23015-F3E0-492A-995E-BE2816C63ADB}' />
+    </window>
+  </windows>
+</workbook>
